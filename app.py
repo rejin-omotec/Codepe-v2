@@ -49,6 +49,10 @@ def index():
 def block_hindi():
     return render_template('block_hindi.html')
 
+@app.route('/contact')
+def bloc_contact():
+    return render_template('index.html')
+
 @app.route('/index')
 def load_index():
     return render_template('index.html')
@@ -60,6 +64,16 @@ def block_bengali():
 @app.route('/block_tamil')
 def block_tamil():
     return render_template('block_tamil.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+@app.route('/tutorials')
+def tutorial():
+    return render_template('tutorials.html')
+
 
 
 if __name__ == "__main__":
